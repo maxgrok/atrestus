@@ -67,13 +67,13 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
   }
 };
 
-exports.setFieldsOnGraphQLNodeType = ({ type, boundActionCreators }) => {
-  const { name } = type;
-  const { createNodeField } = boundActionCreators;
-  if (name === "MarkdownRemark") {
-    addSiblingNodes(createNodeField);
-  }
-};
+// exports.setFieldsOnGraphQLNodeType = ({ type, boundActionCreators }) => {
+//   const { name } = type;
+//   const { createNodeField } = boundActionCreators;
+//   if (name === "MarkdownRemark") {
+//     addSiblingNodes(createNodeField);
+//   }
+// };
 
 exports.createPages = ({ graphql, boundActionCreators }) => {
   const { createPage } = boundActionCreators;
